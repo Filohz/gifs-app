@@ -1,11 +1,11 @@
 interface Props {
-  placeHolder: string;
+  placeholder?: string;
 }
 
-export const SearchBar = ({ placeHolder }: Props) => {
+export const SearchBar = ({ placeholder = 'Buscar' }: Props) => {
   return (
     <div className="search-container">
-      <input type="test" placeholder={placeHolder} />
+      <input type="test" placeholder={placeholder} />
       <button>Buscar</button>
     </div>
   );
