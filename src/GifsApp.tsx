@@ -13,6 +13,16 @@ export const GifsApp = () => {
             <input type="test" placeholder="Buscar gifs" />
             <button>Buscar</button>
         </div>
+
+        {/* previous search */}
+        <div className="previous-searches">
+            <h2>Búsquedas previas</h2>
+            <ul className="previous-searches-list">
+                <li>Goku</li>
+                <li>Vegeta</li>
+                <li>Broli</li>
+            </ul>
+        </div>
     </>
   )
 }
