@@ -1,3 +1,4 @@
+import { PreviousSearch } from "./gifs/components/PreviousSearch";
 import { mockGifs } from "./mock-data/gifs.mock";
 import { CustomHeader } from "./shared/components/CustomHeader";
 import { SearchBar } from "./shared/components/SearchBar";
@@ -6,7 +7,6 @@ export const GifsApp = () => {
   return (
     <>
       {/* header */}
-
       <CustomHeader
         title="Buscador de Gifs"
         // description="Descubre y comparte el gif perfecto"
@@ -16,14 +16,7 @@ export const GifsApp = () => {
      <SearchBar placeHolder="Buscar gifs"/>
 
       {/* previous search */}
-      <div className="previous-searches">
-        <h2>Búsquedas previas</h2>
-        <ul className="previous-searches-list">
-          <li>Goku</li>
-          <li>Vegeta</li>
-          <li>Broli</li>
-        </ul>
-      </div>
+     <PreviousSearch title="Búsquedas previas"/>
 
       {/* gifs */}
       <div className="gifs-container">
